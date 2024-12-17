@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fdf5f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, #ff7f8a, #ffe6e9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: #ff7f8a;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4f5e;
+}
+
+/* Our Story */
+.our-story {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.our-story h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff6347;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event {
+    background: #ffe6e9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.event p {
+    color: #777;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.event p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Memories Section */
+.memories {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fdf5f8;
+}
+
+
+.memory {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.memory img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.memory .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.memory img:hover {
+    transform: scale(1.1);
+}
+
+.memory:hover .description {
+    opacity: 1;
+}
+
+/* Final Message */
+.final-message {
+    padding: 50px 20px;
+    text-align: center;
+    background: #ffe6e9;
+}
+
+.final-message h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+/* Disable dragging of images */
+.protected-image {
+    pointer-events: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+}
+
+/* Disable right-click */
+body {
+    -webkit-user-select: none; /* Disable text selection for webkit browsers */
+    -moz-user-select: none; /* Disable text selection for Firefox */
+    -ms-user-select: none; /* Disable text selection for IE10+ */
+    user-select: none;
+}
+
+/* Add an overlay to hide context menu */
+.protected-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+
