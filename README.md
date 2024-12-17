@@ -1,2 +1,5 @@
-# Eternal-Love
- A personal project showcasing a heartfelt love story with interactive elements, smooth animations, and an emotional timeline. Built using HTML, CSS, and JavaScript, this website captures the essence of a beautiful journey, with a focus on love, memories, and meaningful connections.
+## License
+
+All Rights Reserved.
+
+This repository and its contents are the exclusive property of the author, [Your Name]. You may not copy, modify, distribute, or create derivative works from any part of this repository without explicit written permission from the author.
